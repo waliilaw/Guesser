@@ -1,24 +1,18 @@
-body {
-    background-color: white; /* Plain white background */
-    font-family: Arial, sans-serif; /* Basic font */
-    color: black; /* Black text */
+.container {
+    margin-top: 50px;
     text-align: center;
 }
 
-.container {
-    margin-top: 50px; /* Simple margin */
-}
-
 .title {
-    font-size: 32px; /* Smaller font size */
-    margin-bottom: 20px; /* Space below the title */
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 .input {
     padding: 5px 20px; 
-    width:190px;/* Basic padding */
-    font-size: 16px; /* Smaller font size */
-    border: 1px solid black; /* Simple black border */
+    width: 190px;
+    font-size: 16px;
+    border: 1px solid black;
     /* Remove arrow spinners */
     -moz-appearance: textfield;
 }
@@ -30,17 +24,16 @@ body {
 }
 
 .button {
-    padding: 5px 10px; /* Basic padding */
-    font-size: 16px; /* Smaller font size */
-    background-color: black; /* Gray button */
-    color: white; /* White text */
-
-    border: 1px solid black; /* Simple black border */
-    cursor: pointer; /* Pointer cursor */
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: darkgray; /* Darker gray on hover */
+    background-color: darkgray;
 }
 
 .result {
@@ -50,4 +43,4 @@ body {
     color: black;
     border: 1px solid #f5c6cb;
     border-radius: 4px;
-} 
+}
