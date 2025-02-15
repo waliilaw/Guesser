@@ -6,9 +6,8 @@ import styles from '../../styles/Home.module.css';
 
 export default function Page() {
     const [guess, setGuess] = useState('');
-    const [result, setResult] = useState('');
 
-    const handleSubmit = (event : any ) => {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         alert(`You guessed: ${guess}`);
         setGuess('');
@@ -17,12 +16,13 @@ export default function Page() {
         <div className={styles.container}>
             <Head>
                 <title>Guesser</title>
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Sans+MS" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Sans+MS&display=optional" />
             </Head>
             <main className={styles.main}>
                 <h1 className={styles.title}>Guesser</h1>
-               <h3>Guess a number between 1 and 100</h3>
-              <br></br>  <form onSubmit={handleSubmit}>
+                <h3>Guess a number between 1 and 100</h3>
+                <br></br>
+                <form onSubmit={handleSubmit}>
                     <input
                         type="number"
                         min="1"
